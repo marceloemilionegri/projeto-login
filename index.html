@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -16,17 +18,20 @@
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
+                    <p class="emailesenha">
+                        <span id="conta" class="material-symbols-outlined"> account_circle</span>
                         <label for="iemail">
-                            <input type="email" name="email" id="iemail" required placeholder="Email ou nome do usuário"></label>
+                            <input type="email" name="email" id="iemail" required placeholder="Email ou nome do usuário">
+                        </label>
                     </p>
-                    <p>
+                    <p class="emailesenha">
+                        <span id="senha" class="material-symbols-outlined">key</span>
                         <label for="isenha">
-                            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Senha"></label>
+                            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Senha">
+                        </label>
                     </p>
                     <p><input type="submit" value="Entrar"></p>
                     <p><input type="submit" value="Esqueci a Senha"></p>
-                    
                 </form>
             </div>
         </section>
