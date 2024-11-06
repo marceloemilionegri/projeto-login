@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
@@ -19,19 +20,19 @@
                 <p>Seja Bem-Vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <p class="emailesenha">
-                        <span id="conta" class="material-symbols-outlined"> account_circle</span>
-                        <label for="iemail">
+                        <span id="conta" class="material-icons">account_circle</span>
                             <input type="email" name="email" id="iemail" required placeholder="Email ou nome do usuário">
-                        </label>
+                            <label for="iemail">Email</label>
                     </p>
                     <p class="emailesenha">
-                        <span id="senha" class="material-symbols-outlined">key</span>
-                        <label for="isenha">
+                        <span id="senha" class="material-icons">key</span>
                             <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Senha">
-                        </label>
+                           <label for="isenha">Senha</label>
                     </p>
                     <p><input type="submit" value="Entrar"></p>
-                    <p><input type="submit" value="Esqueci a Senha"></p>
+                    <a href="esqueci.html">
+                        Esqueci a Senha <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
